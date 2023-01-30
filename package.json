@@ -1,0 +1,36 @@
+{
+  "name": "f1data",
+  "version": "0.0.1",
+  "description": "discord f1 bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yolster/f1data.git"
+  },
+  "keywords": [
+    "f1",
+    "f1bot",
+    "discord"
+  ],
+  "author": "Yolster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yolster/f1data/issues"
+  },
+  "homepage": "https://github.com/Yolster/f1data#readme",
+  "dependencies": {
+    "common-tags": "^1.8.2",
+    "cpu-stat": "^2.0.1",
+    "discord.js": "^14.7.1",
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "orio.db": "^3.1.2",
+    "os": "^0.1.2",
+    "request": "^2.88.2",
+    "unirest": "^0.6.0"
+  }
+}
