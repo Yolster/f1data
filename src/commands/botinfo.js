@@ -18,7 +18,7 @@ module.exports = {
       .setColor("#D050F0")
       .setThumbnail(client.user.displayAvatarURL())
       .addFields(
-        {name:"» **Owner**",value:"<@800809750584492052>| Yolster#0601"},
+        {name:"» **Owner**",value:"<@800809750584492052>| This bot is open-source on Github: https://github.com/Yolster/f1data"},
         {name:"» **Ram usage**", value:(process.memoryUsage().heapUsed / 512 / 512).toFixed(2) + " MB", inline:true},
         {name:"» **Work duration**", value:duration},
         {name:"» **Users**:", value:`${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0)}`},
@@ -31,7 +31,7 @@ module.exports = {
         {name:"» **OS**",value:`\`\`${os.platform()}\`\``, inline:true},
         {name:"» **CPU**", value:`\`\`\`md\n${os.cpus().map((i) => `${i.model}`)[0]}\`\`\``},
         {name:"**» Invite**", value:" [Davet Et](https://discord.com/oauth2/authorize?client_id=801458394573570058&scope=client&permissions=8)", inline:true},
-        {name: "**» Support server**", value:"[Sunucumuza Katıl](https://discord.gg/dFVggKATCf)", inline:true}
+        {name: "**» Support server**", value:"[Open Source Link](https://github.com/Yolster/f1data)", inline:true}
         )
 
     return interaction.reply({ embeds: [embed] });
