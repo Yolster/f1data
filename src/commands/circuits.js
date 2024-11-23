@@ -44,7 +44,7 @@ module.exports = {
       .setAuthor({
         name:`${data.response[0].name}`,
         iconURL:data.response[0].image,
-        url:"https://discord.gg/dFVggKATCf"
+        url:"https://github.com/Yolster/f1data"
       })
       .setImage(`${data.response[0].image}`)
     
