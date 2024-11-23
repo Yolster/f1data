@@ -34,7 +34,7 @@ module.exports = {
       .setAuthor({
         name:`${client.user.username}`,
         iconURL:client.user.displayAvatarURL(),
-        url:"https://discord.gg/dFVggKATCf"
+        url:"https://github.com/Yolster/f1data"
       })
       for(i=0; i<10; i++){
         embed.addField({name:i+1, value:`${data.response[i].team.name} **-** ${data.response[i].team.name} **-** ${data.response[i].points}`})
