@@ -1,6 +1,7 @@
 const { EmbedBuilder, PermissionsBitField } = require("discord.js");
 const { SlashCommandBuilder } = require("@discordjs/builders");
 var unirest = require('unirest');
+const { rapidkey } = require('../../config.js');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -16,7 +17,7 @@ module.exports = {
     
       var req = unirest('GET', `https://v1.formula-1.api-sports.io/drivers?search=${driver}`)
       .headers({
-        "x-rapidapi-key": "dfa12c93156d0052886134158d4845ad",
+        "x-rapidapi-key": rapidkey,
         "x-rapidapi-host": "v1.formula-1.api-sports.io",
       })
       .end(function (res) {
