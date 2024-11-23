@@ -16,7 +16,7 @@ module.exports = {
       .setAuthor({
         name:`${client.user.username}`,
         iconURL:client.user.displayAvatarURL(),
-        url:"https://discord.gg/dFVggKATCf"
+        url:"https://github.com/Yolster/f1data"
       })
       .setColor("#D050F0")
       .setDescription(`Just support \`/ (slash)\` commands.
