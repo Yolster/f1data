@@ -12,7 +12,6 @@ const rest = new REST({ version: '10' }).setToken(token);
 
 const log = l => { console.log(`[${moment().format("DD-MM-YYYY HH:mm:ss")}] ${l}`) };
 
-//command-handler
 const commands = [];
 const commandFiles = readdirSync('./src/commands').filter(file => file.endsWith('.js'));
 for (const file of commandFiles) {
@@ -33,7 +32,6 @@ client.on("ready", async () => {
     log(`${client.user.username} now online!`);
 })
 
-//event-handler
 const eventFiles = readdirSync('./src/events').filter(file => file.endsWith('.js'));
 
 for (const file of eventFiles) {
@@ -44,8 +42,6 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
-//
+
 
 client.login(token)
-
-/* TOKEN : ODAxNDU4Mzk0NTczNTcwMDU4.GTnT0w.yTw-kltFD8jLDk-xrp8PrxZUnUtjs8axHh7IZk */
